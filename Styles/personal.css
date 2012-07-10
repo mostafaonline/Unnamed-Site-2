@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:url(../images/Body.jpg);
+}
+
+div#header, div#content{
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+h3.title{
+	padding:s0;
+	vertical-align:middle;
+}
+
+div.SecHead{
+	background-color: #c2ab66;
+	border: solid #4b390f 1px;
+	margin-top: 5px;
+	-moz-border-radius: 0.4em 0.4em 0em 0em;
+	border-radius: 0.4em 0.4em 0em 0em;
+}
+
+div.SecBody{
+	background: url(../images/SecBody.png);
+	border: solid #4b390f 1px;
+	-moz-border-radius: 0em 0em 0.4em 0.4em;
+	border-radius: 0em 0em 0.4em 0.4em ;
+}
+
+img.icon{
+	width: 32px;
+	height: 32px;
+	border: none;
+	margin: 0;
+	padding: 3px;
+}
+
+div.SecHead h3{
+	display:inline;
+	margin: 0;
+	padding: 0 0 0 2px;
+	color: #4b390f;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+}
+	
+/*--------------------------SideBar Menu---------------------*/
+
+.sidebarmenu ul{
+	list-style-type: none;
+	font: bold 13px Verdana;
+	width: 189px; /* Main Menu Item widths */
+
+}
+
+.sidebarmenu ul.parent li{
+	position: relative;
+	z-index: 9999;
+	background-color: rgba(255, 223, 169, 0.5);
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em ;
+}
+ 
+.sidebarmenu ul :not(.parent) li{
+	position: relative;
+	background-color: rgba(255, 223, 169, 0.9);
+	z-index: 9999;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em ;
+}
+
+	
+/*url(../images/SecBody.png);
+/* Top level menu links style */
+.sidebarmenu ul li a{
+	display: block;
+	overflow: auto; /*force hasLayout in IE7 */
+	color:  #c17138;
+	text-decoration: none;
+	padding: 6px;
+	margin: 0;
+	border: 1px solid #778;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em ;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background: transparent; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: #c17138;
+}
+
+.sidebarmenu ul li a:hover{
+background-color: #c1d668;
+color: #585f36;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 190px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+/*--------------------------------end of SideBar Menu---------------------*/
+
+
+
+
+/*--------------------------------Slider-----------------------------------*/
+
+#featured{  
+    width:600px;  
+    padding-right:150px;  
+    position:relative;  
+    height:306px;  
+    background: transparent;
+	border: none;
+	margin: 5px 0px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;	  
+} 
+
+#featured ul.ui-tabs-nav{  
+    position:absolute;  
+    top:0; 
+	left:600px;  
+    list-style:none;  
+    padding:0; 
+	margin:0;  
+    width:150px;  
+} 
+ 
+ 
+#featured ul.ui-tabs-nav li{  
+    padding: 0 0 4px 13px;   
+    font-size:12px;  
+    color:#666;  
+} 
+
+ 
+#featured ul.ui-tabs-nav li a{  
+    font-size:10px; 
+	font-family:Verdana;  
+	padding: 5px; 
+}
+
+#featured .ui-tabs-panel{  
+    width:600px; 
+	height:306px;  
+    background:#e1e3af;
+	border: 1px solid  #b5b791;
+	position:relative;  
+    overflow:hidden;
+	-moz-border-radius: 7px;
+	border-radius: 7px; 
+} 
+ 
+#featured .ui-tabs-hide{  
+    display:none;  
+} 
+
+#featured li.ui-tabs-nav-item a{/*On Hover Style*/  
+    display:block;  
+    height:72px;  
+    color:#333;  
+	background:#d1d3a3;  
+    line-height:20px;  
+    outline:none;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #b5b791;
+ }  
+
+
+#featured li.ui-tabs-nav-item a:hover{  
+    background:#e1e3af;  
+}
+
+  
+#featured li.ui-tabs-selected{ /*Selected tab style*/  
+    background: url(../images/arrow.png) top left no-repeat;  
+} 
+
+ 
+#featured ul.ui-tabs-nav li.ui-tabs-selected a{  
+    background:#c4d96c;
+	border: 1px solid #4b390f;  
+}
+
+#featured ul.ui-tabs-nav li img{  
+    float:left; margin:2px 5px;  
+    background:#fff;  
+    padding:2px;  
+    border:1px solid #eee;  
+}
+
+#featured .ui-tabs-panel .info{  
+    position:absolute;  
+    top:220px; left:0;  
+    height:70px; width: 600px;  
+    background: url(../images/transparent-bg.png);  
+}  
+#featured .info h2{  
+    font-size:18px; 
+	font-family:Georgia, serif;  
+    color:#fff; 
+	padding:5px; 
+	margin:0;  
+    overflow:hidden;  
+}  
+#featured .info p{  
+    margin:0 5px;  
+    font-family:Verdana; 
+	font-size:11px;  
+    line-height:15px; 
+	color:#f0f0f0;  
+}  
+#featured .info a{  
+    text-decoration:none;  
+    color:#fff;  
+}  
+#featured .info a:hover{  
+    text-decoration:underline;  
+}
+
+
+/*--------------------------------end of Slider-----------------------------------*/
+
+
+
+/*--------------------------------Populars-----------------------------------*/
+.popular{
+	width: 244px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.popular_last{
+	width: 244px;
+	display: inline-block;
+}
+
+/*--------------------------------end of Populars-----------------------------*/
