@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>iosie VISITOR</title>
-<link rel="stylesheet" type="text/css" href="Styles/960grid/960_24_col.css" />
+<link rel="stylesheet" type="text/css" href="../../Unnamed Site 2/Styles/960grid/960_24_col.css" />
 <link rel="stylesheet" type="text/css" href="Styles/960grid/reset.css" />
 <link rel="stylesheet" type="text/css" href="Styles/960grid/text.css" />
 <link rel="stylesheet" type="text/css" href="Styles/personal.css" />
@@ -45,25 +45,82 @@ else if (window.attachEvent)
 window.attachEvent("onload", initsidebarmenu)
 
 
+
 $(document).ready(function(){  
-    $("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 3000, true);  
-}); 
+    $("#featured > ul").tabs({fx:{height: "toggle"}}).tabs("rotate", 3000, true);
+	$("#featured > ul").mouseover(function(){
+    $(this).tabs('rotate', 0, false);
+	});
+	$("#featured > ul").mouseout(function(){
+    $(this).tabs({ fx: {opacity: 'toggle'}}).tabs('rotate', 3000);
+	});  
+	}); 
+
 
 
 </script>
 
 </head>
 <body>
+<div  class="toolbar_bg">
 <div id="container" class="container_24 clearfix">
-<div  id="header" class="grid_24 clearfix">
-<div class="SecHead">
-&nbsp;<br />
-</div><!--toolbar -->
-<div class="SecBody">
-&nbsp;<br />
-</div><!--sec body -->
-</div><!--header -->
+	<div  id="header" class="grid_24 clearfix">
+	 	   <div class="toolbar">
+           
+           
+           
+           <!--search form -------------------------------------------------------------------------------------------------------------->
+	 	   		<form class="searchform">
+				<input class="searchfield" type="text" value="Search Content" onfocus="if (this.value == 'Search Content') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search Content';}" />
+				<input class="searchbutton" type="button" value="Go" />
+				</form>
+                <a href="" class="advanced_search">Advanced Search</a>
+                
+           <!--search form -------------------------------------------------------------------------------------------------------------->
+                
+                
+                
+                
+                
+                
+           <!--login form -------------------------------------------------------------------------------------------------------------->                
+                <form class="loginform">
+				<input class="emailfield" type="text" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}" />
+                <input class="passfield" type="text" value="Password" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}" />
+				<input class="signinbutton" type="button" value="Sign in" />
+				</form>
+                <a href="" class="sign_up">Sign Up</a>
+           <!--login form -------------------------------------------------------------------------------------------------------------->                
+                
+                
+                
+                
+                
+	 	   </div><!--toolbar -->
+	</div>
+</div>               
+           
+           
+<div  class="head_bg">
+<div id="container" class="container_24 clearfix">           
+		   <div class="">
+		 		<div id="logo"></div>
+                
+                
+           <!--Description in Header -------------------------------------------------------------------------------------------------------------->                                
+                <p id="about">The IslamIFC is a nonprofit, non governmental organization
+                 that works in cooperation with North American Muslims, 
+                 non-Muslims and organizations to promote mutual understanding
+                  and cultural exchange.<a href="">  Watch the Video!&nbsp;</a></p>
+           <!--Description in Header -------------------------------------------------------------------------------------------------------------->                
+                  
+                  
+                  
+                  
+		   </div><!--sec body -->
+	</div><!--header -->
 </div><!--end of header container -->
+</div><!--end of head bg -->
 
 <div id="content" class="container_24 clearfix">
  <div id="sidebar" class="grid_5">
@@ -74,7 +131,22 @@ $(document).ready(function(){
             <h3 class="title">Categories</h3>
         </div>
         <div class="SecBody8">
-        <div class="sidebarmenu">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!--Categorise -------------------------------------------------------------------------------------------------------------->        
+          
+        <div class="sidebarmenu">                                
+                   
                 <ul id="sidebarmenu1" class="alpha parent">
                     <li><a href="#">Category 1</a>
                         <ul>
@@ -116,6 +188,15 @@ $(document).ready(function(){
                    
                 </ul>
         </div>
+          <!--Categorise -------------------------------------------------------------------------------------------------------------->        
+        
+        
+        
+        
+        
+        
+        
+        
       </div> <!--end of SecBody -->
   	</div><!-- end of Categories -->
     
@@ -124,8 +205,21 @@ $(document).ready(function(){
             <img class="icon" src="images/home.png" />
             <h3 class="title">Glossary</h3>
         </div>
+        
+        
+        
+        
+          <!--Glossary -------------------------------------------------------------------------------------------------------------->                
+        
         <div class="SecBody">&nbsp;
         </div>
+        
+          <!--Glossary -------------------------------------------------------------------------------------------------------------->        
+       
+        
+        
+        
+        
     </div><!-- end of Glossary -->
   
   	<div id="TagCloud">
@@ -133,8 +227,19 @@ $(document).ready(function(){
             <img class="icon" src="images/home.png" />
             <h3 class="title">Tag Cloud</h3>
         </div>
+        
+        
+        
+          <!--Tag Cloud -------------------------------------------------------------------------------------------------------------->                
+        
         <div class="SecBody">&nbsp;
         </div>
+        
+          <!--Tag CLoud -------------------------------------------------------------------------------------------------------------->        
+       
+        
+        
+        
     </div><!-- end of Tag Cloud-->
     
  </div><!-- end of sidebar -->
@@ -146,6 +251,16 @@ $(document).ready(function(){
             <h3 class="title">What's New? </h3>
         </div>
         <!--no SecBody -->
+        
+        
+        
+        
+        
+        
+        
+        
+          <!--Slider -------------------------------------------------------------------------------------------------------------->        
+        
             <div id="featured" >  
                 <ul class="ui-tabs-nav">  
                     <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1"><h4 class="title">Lesson Title</h4><span class="description">Added: 2 days ago<br />Category: Towhid</span></a></li>  
@@ -157,36 +272,49 @@ $(document).ready(function(){
                 <div id="fragment-1" class="ui-tabs-panel" style="">  
                     <img src="images/slide1.jpg" alt="" />  
                     <div class="info" >  
-                    <h2><a href="#" >15+ Excellent High Speed Photographs</a></h2>  
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....<a href="#" >read more</a></p>  
+                    <h2>Lesson Title</h2>  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="#" >View This Lesson!</a></p>  
                     </div>  
                 </div>  
                 <!-- Second Content -->  
                 <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">  
                     <img src="images/slide2.jpg" alt="" />  
                     <div class="info" >  
-                    <h2><a href="#" >20 Beautiful Long Exposure Photographs</a></h2>  
-                    <p>Vestibulum leo quam, accumsan nec porttitor a, euismod ac tortor. Sed ipsum lorem, sagittis non egestas id, suscipit....<a href="#" >read more</a></p>  
+                    <h2>Lesson Title</h2>  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="#" >View This Lesson!</a></p>  
                     </div>  
                 </div>  
                 <!-- Third Content -->  
                 <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">  
                     <img src="images/slide3.jpg" alt="" />  
                     <div class="info" >  
-                    <h2><a href="#" >35 Amazing Logo Designs</a></h2>  
-                    <p>liquam erat volutpat. Proin id volutpat nisi. Nulla facilisi. Curabitur facilisis sollicitudin ornare....<a href="#" >read more</a></p>  
+                    <h2>Lesson Title</h2>  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="#" >View This Lesson!</a></p>  
                     </div>  
                 </div>  
                 <!-- Fourth Content -->  
                 <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">  
                     <img src="images/slide4.jpg" alt="" />  
                     <div class="info" >  
-                    <h2><a href="#" >Create a Vintage Photograph in Photoshop</a></h2>  
-                    <p>Quisque sed orci ut lacus viverra interdum ornare sed est. Donec porta, erat eu pretium luctus, leo augue sodales....<a href="#" >read more</a></p>  
+                    <h2>Lesson Title</h2>  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<a href="#" >View This Lesson!</a></p>  
                     </div>  
                 </div>  
           </div> <!--end of Slider -->
-    </div><!--end of slider -->
+          
+           <!--Slider -------------------------------------------------------------------------------------------------------------->        
+
+
+
+
+
+
+
+
+
+
+
+
     
  <div id="populars_container" class="grid_19 alpha omega clearfix">
     <div id="Lessons" class="popular">
@@ -194,8 +322,18 @@ $(document).ready(function(){
     	<img class="icon" src="images/home.png" />
         <h3 class="title">Popular Lessons </h3>
       </div>
+      
+      
+          <!--Popular Lessons -------------------------------------------------------------------------------------------------------------->        
+      
       <div class="SecBody">&nbsp;
       </div>
+      
+          <!--Popular Lessons -------------------------------------------------------------------------------------------------------------->        
+      
+      
+      
+      
     </div><!--end of Lessons -->
     
     <div id="Entries" class="popular">
@@ -203,8 +341,20 @@ $(document).ready(function(){
             <img class="icon" src="images/home.png" />
             <h3 class="title">Popular Entries </h3>
         </div>
+        
+        
+        
+        
+          <!--Popular Entries -------------------------------------------------------------------------------------------------------------->        
+        
         <div class="SecBody">&nbsp;
         </div>
+        
+          <!--Popular Entries -------------------------------------------------------------------------------------------------------------->        
+        
+        
+        
+        
     </div><!--end of Entries -->
     
     <div id="Suggestions" class="popular_last">
@@ -212,8 +362,23 @@ $(document).ready(function(){
             <img class="icon" src="images/home.png" />
             <h3 class="title">Suggestions </h3>
         </div>
+        
+        
+        
+        
+        
+          <!--Popular Suggestions -------------------------------------------------------------------------------------------------------------->        
+        
         <div class="SecBody">&nbsp;
         </div>
+        
+          <!--Popular Suggestions -------------------------------------------------------------------------------------------------------------->        
+        
+        
+        
+        
+        
+        
     </div><!--end of Suggestions -->
  </div>
   </div><!-- end of main -->

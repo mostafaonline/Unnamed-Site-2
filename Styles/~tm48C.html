@@ -6,8 +6,8 @@ body{
 }
 
 div#header, div#content{
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 h3.title{
@@ -16,31 +16,22 @@ h3.title{
 }
 
 div.SecHead{
-	background-color: rgba(203,220,104,.7) ;
-	/*
-	background-image: linear-gradient(left , rgba(203,220,104,.7) 0%, rgba(79,93,31,.7) 100%);
-	background-image: -o-linear-gradient(left , rgba(203,220,104,.7) 0%, rgba(79,93,31,.7) 100%);
-	background-image: -moz-linear-gradient(left , rgba(203,220,104,.7) 0%, rgba(79,93,31,.7) 100%);
-	background-image: -webkit-linear-gradient(left , rgba(203,220,104,.7) 0%, rgba(79,93,31,.7) 100%);
-	background-image: -ms-linear-gradient(left , rgba(203,220,104,.7) 0%, rgba(79,93,31,.7) 100%);
-	*/
-	border: solid #4b390f 0px;
+	background-image: linear-gradient(left , rgba(116,115,50,.8) 0%, rgba(116,115,50,.4) 100%);
+	background-image: -o-linear-gradient(left , rgba(116,115,50,.8) 0%, rgba(116,115,50,.4) 100%);
+	background-image: -moz-linear-gradient(left , rgba(116,115,50,.8) 0%, rgba(116,115,50,.4) 100%);
+	background-image: -webkit-linear-gradient(left , rgba(116,115,50,.8) 0%, rgba(116,115,50,.4) 100%);
+	background-image: -ms-linear-gradient(left , rgba(116,115,50,.8) 0%, rgba(116,115,50,.4) 100%);
+	border: solid #4b390f 1px;
 	margin-top: 5px;
 	-moz-border-radius: 0.4em 0.4em 0em 0em;
 	border-radius: 0.4em 0.4em 0em 0em;
-	-moz-box-shadow: 0 0 5px #555;
-	-webkit-box-shadow: 0 0 5px #555;
-	box-shadow: 0 0 5px #555;
 }
 
 div.SecBody{
 	background-color: rgba(250,240,156,.5) ;
-	border: solid #4b390f 0px;
+	border: solid #4b390f 1px;
 	-moz-border-radius: 0em 0em 0.4em 0.4em;
 	border-radius: 0em 0em 0.4em 0.4em ;
-	-moz-box-shadow: 0 0 5px #555;
-	-webkit-box-shadow: 0 0 5px #555;
-	box-shadow: 0 0 5px #555;
 }
 
 img.icon{
@@ -48,142 +39,17 @@ img.icon{
 	height: 32px;
 	border: none;
 	margin: 0;
-	padding: 3px 1px 3px 3px;
+	padding: 3px;
 }
 
 div.SecHead h3{
 	display:inline;
 	margin: 0;
-	padding: 0;
-	color: rgb(85,67,17);
+	padding: 0 0 0 2px;
+	color: rgb(54,41,7);
 	font: bold 15px "Palatino Linotype", "Book Antiqua", Palatino, ser
 }
-
-/*--------------------------Header---------------------*/
-
-.toolbar_bg{
-	width: 100%;
-	background-color: rgba(203,220,104,.7) ;
-	border-bottom: #630 solid 0px;
-	-moz-box-shadow: 0px 2px 5px rgba(0,0,0,.8);
-	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,.8);
-	box-shadow: 0px 2px 5px rgba(0,0,0,.8);
-}
 	
-
-.head_bg{
-	width: 100%;
-	background-color: rgba(80,90,45,.7) ;
-	border-bottom: #630 solid 0px;
-	-moz-box-shadow: 0px 2px 5px rgba(0,0,0,.5);
-	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,.5);
-	box-shadow: 0px 2px 5px rgba(0,0,0,.5);
-}
-
-.toolbar{
-	margin-top: 0;
-	border-bottom: #630 solid 0px;
-	/*-moz-box-shadow: 0 0 5px #333;
-	-webkit-box-shadow: 0 0 5px #333;
-	box-shadow: 0 0 5px #333;
-	-moz-border-radius: 0em 0em 0.4em 0.4em;
-	border-radius: 0em 0em 0.4em 0.4em ;*/
-}
-
-.searchform, .loginform {
-	display: inline-block;
-	zoom: 1; /* ie7 hack for display:inline-block */
-	*display: inline;
-	border: none;
-	padding-top: 5px;
-	padding-bottom: 3px;
-
-}
-
-.loginform{
-	margin-left: 310px;
-}
-
-.searchform input, .loginform input {
-	font: normal 10px/100% Arial, Helvetica, sans-serif;
-}
-.searchform .searchfield, .loginform .emailfield, .loginform .passfield {
-	background: rgba(224,228,180,1);
-	padding: 4px 4px 4px 6px;
-	width: 120px;
-	border: solid 1px #630;
-	outline: none;
-    color: rgb(106,100,70);
-
-	-webkit-border-radius: .7em;
-	-moz-border-radius: .7em;
-	border-radius: .7em;
-
-	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-}
-
-.searchform .searchbutton, .loginform .signinbutton {
-	color: rgb(243,238,175);
-	border: solid 1px #494949;
-	font: 11px bold;
-	text-align: center;
-	height: 21px;
-	width: 22px;
-	text-shadow: 0 1px 1px rgba(0,0,0,.6);
-
-	-webkit-border-radius: .5em;
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-
-	background: rgb(56,46,21);
-	background: -webkit-gradient(linear, left top, left bottom, from(#A08C67), to(#454545));
-	background: -moz-linear-gradient(top,  #A08C67,  #454545);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#A08C67', endColorstr='#454545'); /* ie7 */
-	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#A08C67', endColorstr='#454545'); /* ie8 */
-}
-
-.loginform .signinbutton {
-	width: 50px;
-}
-
-a.advanced_search, a.sign_up{
-	color: rgb(56,46,21);
-	font: 12px bold Arial, Helvetica, sans-serif;
-}
-
-div#logo{
-	background:url(../images/islamifc.png) center center no-repeat;
-	height: 65px;
-	width: 305px;
-	padding: 60px 0px 5px;
-	float: left;
-	margin-right: 30px;
-}
-
-#about{
-	color: rgba(250,240,156, 1);
-	text-align:justify;
-	padding: 35px 15px 10px;
-	font: 13px "Comic Sans MS", cursive;
-}
-
-#about a, #about a:visited, #about a:link{
-	color: rgba(195,250,230,.8);
-	font-weight: bold;
-}
-
-#about a:hover{
-	color: rgba(195,250,230,1);
-	background: rgba(75,57,15,1);
-}
-
-
-/*--------------------------end of Header---------------------*/
-
-
-
 /*--------------------------SideBar Menu---------------------*/
 
 .sidebarmenu ul{
@@ -203,7 +69,7 @@ div#logo{
  
 .sidebarmenu ul :not(.parent) li{
 	position: relative;
-	background-color: rgba(255, 240, 156, .8);
+	background-color: rgba(255, 240, 156, .5);
 	z-index: 9999;
 	-moz-border-radius: 0.4em;
 	border-radius: 0.4em ;
@@ -313,7 +179,7 @@ visibility: hidden;
 #featured li.ui-tabs-nav-item a{/*On Hover Style*/  
     display:block;  
     height:51px;  
-    color: rgb(106,100,70);  
+    color: rgb(160,140,103);  
 	background-color: rgba(116,115,50,.2);  
     line-height:15px;  
     outline:none;
@@ -341,11 +207,7 @@ visibility: hidden;
  
 #featured ul.ui-tabs-nav li.ui-tabs-selected a{  
     background:#c4d96c;
-	border: 1px solid #4b390f;
-}
-
-#featured ul.ui-tabs-nav li.ui-tabs-selected a h4{
-    color: #630;
+	border: 1px solid #4b390f;  
 }
 
 #featured ul.ui-tabs-nav li img{  
@@ -359,14 +221,14 @@ visibility: hidden;
     position:absolute;  
     top:170px; left:0;  
     height:120px; width: 600px;  
-    background-color: rgba(250,250,210,.8);  
+    background-color: rgba(250,240,154,.8);  
 }  
 #featured .info h2{  
     font-size:18px; 
 	font-family:Georgia, serif;  
+    color:#fff; 
 	padding:15px; 
-	margin:0;
-    color:#630;  
+	margin:0;  
     overflow:hidden;  
 }  
 #featured .info p{  
@@ -378,7 +240,7 @@ visibility: hidden;
 }  
 #featured .info a{  
     text-decoration:none;  
-    color:#c17138;  
+    color:#c4d96c;  
 }  
 #featured .info a:hover{  
     text-decoration:underline;  
